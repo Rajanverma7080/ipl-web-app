@@ -1,0 +1,717 @@
+                    /* -------------------------
+                            home page css
+                    ------------------------- */
+
+/* -------------------------
+   Basic Reset
+------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* -------------------------
+   Body
+------------------------- */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f5fa;
+    color: #15153d;
+}
+
+
+/* -------------------------
+   Header
+------------------------- */
+
+.header {
+    height: 70px;
+
+    background-color: #39209a;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 60px;
+}
+
+
+/* IPL Logo */
+
+.logo img {
+    width: 80px;
+    height: auto;
+    display: block;
+}
+
+
+/* Navigation */
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+/* -------------------------
+   Hero Section
+------------------------- */
+
+.hero {
+    background: linear-gradient(
+        135deg,
+        #21145f,
+        #39209a
+    );
+
+    color: white;
+
+    text-align: center;
+
+    padding: 60px 20px;
+}
+
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+
+.hero p {
+    font-size: 22px;
+}
+
+
+/* -------------------------
+   Main Container
+------------------------- */
+
+.container {
+    max-width: 1350px;
+
+    margin: 0 auto;
+
+    padding: 30px;
+}
+
+
+/* -------------------------
+   Cards
+------------------------- */
+
+.cards {
+    display: grid;
+
+    grid-template-columns:
+        repeat(5, 1fr);
+
+    gap: 25px;
+}
+
+
+/* Individual Card */
+
+.card {
+    background-color: white;
+
+    border-radius: 12px;
+
+    padding: 30px 20px;
+
+    text-align: center;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.1);
+
+    transition: 0.3s;
+}
+
+
+/* Card hover */
+
+.card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Card Icon */
+
+.icon {
+    font-size: 50px;
+
+    margin-bottom: 20px;
+}
+
+
+/* Card heading */
+
+.card h2 {
+    font-size: 21px;
+
+    margin-bottom: 15px;
+}
+
+
+/* Card paragraph */
+
+.card p {
+    color: #555;
+
+    line-height: 1.6;
+
+    min-height: 55px;
+
+    margin-bottom: 25px;
+}
+
+
+/* -------------------------
+   Buttons
+------------------------- */
+
+.btn {
+    display: inline-block;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 12px 25px;
+
+    border-radius: 6px;
+
+    font-weight: bold;
+}
+
+
+/* Different button colors */
+
+.blue {
+    background-color: #287be8;
+}
+
+.purple {
+    background-color: #7138d4;
+}
+
+.green {
+    background-color: #20ad68;
+}
+
+.orange {
+    background-color: #f39418;
+}
+
+.red {
+    background-color: #ed3d3d;
+}
+
+
+/* -------------------------
+   About Section
+------------------------- */
+
+.about {
+    margin-top: 35px;
+
+    background-color: white;
+
+    border-radius: 12px;
+
+    padding: 40px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+.about-text {
+    max-width: 900px;
+}
+
+
+.about h2 {
+    font-size: 30px;
+
+    margin-bottom: 20px;
+}
+
+
+.about p {
+    font-size: 17px;
+
+    line-height: 1.7;
+
+    margin-bottom: 10px;
+}
+
+
+.trophy {
+    font-size: 130px;
+}
+
+
+/* -------------------------
+   Footer
+------------------------- */
+
+footer {
+    margin-top: 30px;
+
+    background-color: #17134f;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 7px;
+}
+
+
+/* -------------------------
+   Responsive Design
+------------------------- */
+
+@media (max-width: 1000px) {
+
+    .cards {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .header {
+        padding: 0 20px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .about {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+}
+
+
+
+                    /* -------------------------
+                            IPL TEAMS PAGE css
+                    ------------------------- */
+
+
+
+/* Page Background */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f7ff;
+    color: #17203a;
+}
+
+
+/* ================================
+   HEADER
+   ================================ */
+
+.header {
+    height: 70px;
+    background: linear-gradient(
+        90deg,
+        #171b72,
+        #2520a5
+    );
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 40px;
+}
+
+
+
+/* ================================
+   BREADCRUMB
+   ================================ */
+
+.breadcrumb {
+    background-color: white;
+
+    padding: 18px 40px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    border-bottom: 1px solid #ddd;
+}
+
+
+.breadcrumb a {
+    color: #1457d9;
+
+    text-decoration: none;
+
+    font-size: 16px;
+}
+
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+
+.breadcrumb span {
+    color: #555;
+}
+
+
+/* ================================
+   MAIN CONTAINER
+   ================================ */
+
+.container {
+    width: 90%;
+
+    max-width: 1400px;
+
+    margin: 0 auto;
+}
+
+
+/* ================================
+   PAGE HEADING
+   ================================ */
+
+.page-heading {
+    text-align: center;
+
+    padding: 2.5px 0 25px;
+}
+
+
+.page-heading h1 {
+    margin: 0 0 10px;
+
+    font-size: 42px;
+
+    color: #171b72;
+}
+
+
+.page-heading p {
+    margin: 0;
+
+    font-size: 18px;
+
+    color: #555;
+}
+
+
+/* ================================
+   TEAM SUMMARY
+   ================================ */
+
+.summary {
+    background-color: white;
+
+    border-radius: 12px;
+
+    padding: 15px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 25px;
+
+    box-shadow:
+        0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+
+.summary-left {
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+}
+
+
+.summary-icon {
+    font-size: 45px;
+}
+
+
+.summary-left p {
+    margin: 0 0 5px;
+
+    font-size: 16px;
+
+    color: #333;
+}
+
+
+.summary-left h2 {
+    margin: 0;
+
+    font-size: 35px;
+
+    color: #1457d9;
+}
+
+
+/* ================================
+   INFORMATION BOX
+   ================================ */
+
+.info-box {
+    background-color: #eef3ff;
+
+    color: #1457d9;
+
+    padding: 18px 25px;
+
+    border-radius: 8px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    font-size: 15px;
+}
+
+
+/* ================================
+   TEAMS GRID
+   ================================ */
+
+.teams-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(5, 1fr);
+
+    gap: 20px;
+
+    padding-bottom: 40px;
+}
+
+
+/* ================================
+   TEAM CARD
+   ================================ */
+
+.team-card {
+    background-color: white;
+
+    border-radius: 12px;
+
+    padding: 10px 10px;
+
+    text-align: center;
+
+    box-shadow:
+        0 3px 12px rgba(0, 0, 0, 0.08);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* Card Hover */
+
+.team-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+/* ================================
+   TEAM LOGO
+   ================================ */
+
+.team-logo {
+    width: 120px;
+
+    height: 100px;
+
+    object-fit: contain;
+
+    margin-bottom: 10px;
+}
+
+
+/* ================================
+   TEAM SHORT NAME
+   ================================ */
+
+.team-card h2 {
+    margin: 0 0 8px;
+
+    font-size: 26px;
+
+    color: #17203a;
+}
+
+
+/* ================================
+   TEAM FULL NAME
+   ================================ */
+
+.team-card p {
+    margin: 0 0 20px;
+
+    min-height: 45px;
+
+    font-size: 16px;
+
+    line-height: 1.4;
+
+    color: #555;
+}
+
+
+/* ================================
+   VIEW DETAILS BUTTON
+   ================================ */
+
+.view-button {
+    display: inline-block;
+
+    background-color: #1457d9;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 11px 28px;
+
+    border-radius: 6px;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    transition:
+        background-color 0.3s ease,
+        transform 0.2s ease;
+}
+
+
+.view-button:hover {
+    background-color: #0d3fa8;
+
+    transform: translateY(-2px);
+}
+
+
+/* ================================
+   RESPONSIVE DESIGN
+   ================================ */
+
+
+/* Tablet */
+
+@media (max-width: 1100px) {
+
+    .teams-grid {
+        grid-template-columns:
+            repeat(3, 1fr);
+    }
+
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .header {
+        padding: 0 20px;
+    }
+
+
+    .breadcrumb {
+        padding: 15px 20px;
+    }
+
+
+    .container {
+        width: 92%;
+    }
+
+
+    .page-heading h1 {
+        font-size: 32px;
+    }
+
+
+    .page-heading p {
+        font-size: 15px;
+    }
+
+
+    .summary {
+        flex-direction: column;
+
+        gap: 20px;
+
+        align-items: flex-start;
+    }
+
+
+    .info-box {
+        width: 100%;
+
+        box-sizing: border-box;
+    }
+
+
+    .teams-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+}
