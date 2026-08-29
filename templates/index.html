@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>IPL Dashboard</title>
+
+    <!-- CSS file connect -->
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <img src="{{url_for('static',filename='ipl_logo.png')}}" alt="ipl_Logo">
+        </div>
+
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <h1>WELCOME TO IPL DASHBOARD</h1>
+
+        <p>
+            Explore IPL Teams, Records, Players & Stats
+        </p>
+
+    </section>
+
+
+    <!-- Main Content -->
+    <main class="container">
+
+        <!-- Cards Section -->
+        <section class="cards">
+
+            <!-- Card 1 -->
+            <div class="card">
+                <div class="icon">👥</div>
+
+                <h2>IPL Teams</h2>
+
+                <p>
+                    View all IPL teams and total count
+                </p>
+
+                <a href="/teams" class="btn blue">
+                    View Teams
+                </a>
+            </div>
+
+
+            <!-- Card 2 -->
+            <div class="card">
+                <div class="icon">⚔️</div>
+
+                <h2>Team vs Team</h2>
+
+                <p>
+                    Compare two teams head-to-head record
+                </p>
+
+                <a href="/compare" class="btn purple">
+                    Compare
+                </a>
+            </div>
+
+
+            <!-- Card 3 -->
+            <div class="card">
+                <div class="icon">📊</div>
+
+                <h2>Team Record</h2>
+
+                <p>
+                    View detailed record of a team
+                </p>
+
+                <a href="/team-record" class="btn green">
+                    View Record
+                </a>
+            </div>
+
+
+            <!-- Card 4 -->
+            <div class="card">
+                <div class="icon">🏏</div>
+
+                <h2>Batsman Record</h2>
+
+                <p>
+                    View batsman performance stats
+                </p>
+
+                <a href="/batsmen" class="btn orange">
+                    View Batsmen
+                </a>
+            </div>
+
+
+            <!-- Card 5 -->
+            <div class="card">
+                <div class="icon">🔴</div>
+
+                <h2>Bowler Record</h2>
+
+                <p>
+                    View bowler performance stats
+                </p>
+
+                <a href="/bowlers" class="btn red">
+                    View Bowlers
+                </a>
+            </div>
+
+        </section>
+
+
+        <!-- About IPL -->
+        <section class="about">
+
+            <div class="about-text">
+
+                <h2>About IPL</h2>
+
+                <p>
+                    The Indian Premier League (IPL) is a professional
+                    Twenty20 cricket league in India.
+                </p>
+
+                <p>
+                    This IPL Dashboard provides data and insights
+                    from <strong>2008 to 2020</strong>.
+                </p>
+
+                <p>
+                    You can explore teams, head-to-head records,
+                    team records, batsman statistics and bowler statistics.
+                </p>
+
+            </div>
+
+            <div class="trophy">
+                🏆
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 IPL Dashboard | Data: 2008 - 2020</p>
+    </footer>
+
+</body>
+</html>
