@@ -67,7 +67,7 @@
                     Compare two teams head-to-head record
                 </p>
 
-                <a href="/compare" class="btn purple">
+                <a href="{{url_for('team_fetch')}}" class="btn purple">
                     Compare
                 </a>
             </div>
@@ -148,7 +148,7 @@
             </div>
 
             <div class="trophy">
-                🏆
+                <img src="{{url_for('static',filename='images/trophy.png')}}" alt="trophy image">
             </div>
 
         </section>
